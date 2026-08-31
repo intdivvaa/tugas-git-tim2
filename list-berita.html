@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Berita - KabarKini</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f0e8;
+            color: #292522;
+        }
+
+        header {
+            background: #292522;
+            color: white;
+            padding: 25px 8%;
+        }
+
+        header span {
+            color: #d65f3f;
+        }
+
+        nav {
+            background: white;
+            padding: 15px 8%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #292522;
+            margin-right: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d65f3f;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .berita {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 7px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .berita img {
+            width: 200px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .kategori {
+            color: #d65f3f;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .berita h3 {
+            margin: 7px 0;
+        }
+
+        .berita p {
+            color: #666;
+        }
+
+        footer {
+            background: #292522;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .berita {
+                display: block;
+            }
+
+            .berita img {
+                width: 100%;
+                height: 180px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kabar<span>Kini</span></h1>
+        <p>Portal berita terkini dan terpercaya</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="list-berita.html">List Berita</a>
+    </nav>
+
+    <main class="container">
+
+        <h2>List Berita</h2>
+        <p>Berita terbaru dari berbagai kategori.</p>
+
+        <article class="berita">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c" alt="Perkembangan teknologi di Indonesia">
+
+            <div>
+                <span class="kategori">NASIONAL</span>
+                <h3>Perkembangan Teknologi di Indonesia</h3>
+                <p>Teknologi terus berkembang dalam kehidupan masyarakat.</p>
+            </div>
+        </article>
+
+        <article class="berita">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="AI semakin banyak digunakan">
+
+            <div>
+                <span class="kategori">TEKNOLOGI</span>
+                <h3>AI Semakin Banyak Digunakan</h3>
+                <p>AI mulai digunakan dalam berbagai bidang kehidupan.</p>
+            </div>
+        </article>
+
+        <article class="berita">
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211" alt="Atlet Indonesia meraih prestasi">
+
+            <div>
+                <span class="kategori">OLAHRAGA</span>
+                <h3>Atlet Indonesia Raih Prestasi</h3>
+                <p>Prestasi membanggakan kembali diraih atlet Indonesia.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KabarKini</p>
+    </footer>
+
+</body>
+</html>
